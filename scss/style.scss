@@ -1,0 +1,147 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #EEF7FF;
+	font-family: 'Open Sans', sans-serif;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 320px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+	input{
+		width: 300px;
+		padding-top: 5px ;
+		padding-bottom: 5px ;
+		padding-left: 20px ;
+		outline: none;
+		border: none;
+	    border-top: 1px solid rgba(0, 0, 0, 0.25);
+	    border-left: 1px solid rgba(0, 0, 0, 0.25);
+	    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+		border-radius: 6px 0px 0px 6px;
+	}
+	.image{
+	    display: flex;
+	    align-items: center;
+	    background: #f3f3f3;
+	    border: 1px solid rgba(0, 0, 0, 0.25);
+	    border-radius: 0px 6px 6px 0px;
+	    cursor: pointer;
+	    padding: 10px 20px;
+		img{
+			height: 13px;
+			width: 13px;
+		}
+	}
+}
+.container{
+	width: 1200px;
+	margin: auto;
+	.navigation{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	    width: 900px;
+	    margin: auto;
+	    margin-top: 40px;
+		.item{
+
+		}
+	}
+	.items{
+		width: 100%;
+		margin-top: 5px;
+		display: flex;
+		flex-direction: column;
+		.item{
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&.template{
+				display: none;
+			}
+			&.opened{
+				.btnShow.plus{
+					display: none;
+				}
+				.btnShow.minus{
+					display: block;
+				}
+			}
+			.wraper{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 1180px;
+				margin: auto;
+			    align-items: center;
+				.container{
+					display: flex;
+					flex-direction: row;
+					margin: auto;
+					margin-left: 41px;
+				}
+			}
+			.btnShow{
+				font-weight: 700;
+				font-size: 50px;
+				cursor: pointer;
+			    margin-right: 10px;
+			    display: none;
+			    &.plus{
+			    	display: block;
+			    }
+			}
+			.hide{
+				display: none;
+				.wraper{
+					display: flex;
+					flex-direction: row;
+					.left{
+						display: flex;
+						flex-direction: column;
+						align-items: baseline;
+						max-width: 450px;
+						width: 100%;
+						margin-left: 148px;
+						h1{
+							color:rgba(0,0,0,0.45);
+							img{
+								width: 20px;
+								height: 20px;
+								margin-left: 10px;
+							}
+						}
+					}
+					.right{
+						display: flex;
+						flex-direction: column;
+						width: 100%;
+						margin-top:60px;
+					}
+				}
+			}
+		}
+		.item:nth-child(2n+1){
+			background: #CCDFF0;
+		}
+		.item:nth-child(2n){
+			background: transparent;
+		}
+	}
+}
+
+.imgborder{
+	width: 70px;
+	height: 70px;
+	border: 1px solid black;
+}
+.itemAll{
+	max-width: 225px;
+	width: 100%;
+}

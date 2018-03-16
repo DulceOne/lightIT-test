@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="script/jquery.min.js"></script>
+	<script src="script/main.js"></script>
+	<title>iTunes API</title>
+</head>
+<body>
+	<div class="search">
+		<input type="text">
+		<div class="image"><img src="img/search.png" alt=""></div>
+	</div>
+	<section class="container">
+		<div class="navigation">
+			<div class="itemAll"><b>Artist</b></div>
+			<div class="itemAll"><b>Track</b></div>
+			<div class="itemAll"><b>Collection</b></div>
+			<div class="itemAll"><b>Genre</b></div>
+		</div>
+		<div class="items">
+			<div class='item template'>
+				<div class='wraper'>
+				<img src='' id="trackImg">
+					<div class='container'>
+					<div class='itemAll artist'></div>
+					<div class='itemAll track'></div>
+					<div class='itemAll collectionName'></div>
+					<div class='itemAll genre'></div>
+				</div>
+				<div class='btnShow plus'>+</div>
+				<div class='btnShow minus'>-</div>
+			</div>
+				<div class='hide'>
+					<div class='wraper'>
+						<div class='left'>
+						<h1><img src='img/note.png' alt=''></h1>
+						<div class='collection'><b>Collection: </b></div>
+						<div class='count'><b>Track Count: </b></div>
+						<div class='collectionPrice'><b>Price: </b></div>
+					</div>
+						<div class='right'>
+						<div class='duration'><b></b></div>
+						<div class='price'><b></b></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
